@@ -11,6 +11,39 @@ The dataset `study_performance.csv` must be located in the **same folder** as th
 
 ---
 
+### 📊 Features (Independent Variables)
+- **gender**: Male or Female  
+- **race/ethnicity**: Categorical groupings (e.g., group A, B, C...)  
+- **parental level of education**: Highest education level of parents  
+- **lunch**: Type of lunch (standard or free/reduced)  
+- **test preparation course**: Whether the student completed a prep course  
+- **reading score**: Numerical score representing reading performance  
+
+### 🎯 Target Variable (Dependent)
+- **math score**: The main variable we aim to predict using linear regression.
+
+---
+
+## Model: Linear Regression
+
+Linear regression is used to identify how the independent variables (including both categorical and numerical features) relate to the target variable (`math score`). Among the features, `reading score` is a continuous variable, while others are categorical and will be encoded accordingly before training.
+
+
+---
+
+## Overfitting vs Underfitting
+
+### ⚠️ Overfitting
+Occurs when the model learns the training data *too well*, including noise and fluctuations. It performs well on training data but poorly on unseen (test) data.
+
+
+
+### ⚠️ Underfitting
+Occurs when the model is *too simple* to capture underlying patterns in the data.
+
+
+---
+
 ## How to Use
 
 1. **Clone or download this repository**, making sure both the notebook (`student_evaluator(1).ipynb`) and the data file (`study_performance.csv`) are in the same directory.
